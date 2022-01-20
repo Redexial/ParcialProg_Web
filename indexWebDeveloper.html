@@ -13,6 +13,9 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- import javascript script -->
+    <script src="script.js"></script>
             
 
      <!--Import Google Icon Font-->
@@ -36,92 +39,80 @@
 <body>
 
     
-      <div class="container" id="container">
-        <!-- Page Content goes here -->
-        <h1><bold>Web</bold>Developer</h1>
+  <div class="container" id="container">
+    <!-- Page Content goes here -->
+    <h1><bold>Web</bold>Developer</h1>
 
-     <form class="form" name="form" method="post">
-        <h5>Formulario de afiliación</h5>
+    <form class="form" name="form" method="post">
+      <h5>Formulario de afiliación</h5>
 
         
 
+      <div class="row">
+        <!--nombre-->
         <div class="row">
-            <!--nombre-->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="nombre" type="text" class="validate">
-                    <label for="nombre">Nombre Completo</label>
-                </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="nombre" type="text" class="validate">
+            <label for="nombre">Nombre Completo</label>
+          </div>
+        </div>
               
-              <!--email-->
-              <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">email</i>
-                    <input id="email" type="text" class="validate">
-                    <label for="email">Email</label>
-                </div>
+            <!--email-->
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="text" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
               
-                <!--telefono-->
-              <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">local_phone</i>
-                    <input id="telefono" type="text" class="validate">
-                    <label for="telefono">Teléfono</label>
-                </div>
+            <!--telefono-->
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">local_phone</i>
+            <input id="telefono" type="text" class="validate">
+            <label for="telefono">Teléfono</label>
+          </div>
+        </div>
 
               
-              <!--gustos-->
-              <div class="row">
-                <div class="input-field col s12">
-                    <input id="gustos" type="text" class="validate">
+            <!--gustos-->
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="gustos" type="text" class="validate">
                     <!--<label for="gustos"><button class="btn waves-effect waves-light" type="submit" name="action">Gustos</label>
-                </div>
+                
 
                 < Tabla de gustos-->
-                
-                
-
-                <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
-
-                <table id="myTable">
-                  <tr>
-                    <td>Row1 cell1</td>
-                    <td>Row1 cell2</td>
-                  </tr>
-                  <tr>
-                    <td>Row2 cell1</td>
-                    <td>Row2 cell2</td>
-                  </tr>
-                  <tr>
-                    <td>Row3 cell1</td>
-                    <td>Row3 cell2</td>
-                  </tr>
-                </table>
-                <br>
-                
-                <button type="button" onclick="myFunction()">Try it</button>
-
-   
-
-      
           </div>
+                
 
-        
+          <p>Click the button to add a new row at the first position of the table and then add cells and content.</p>
 
+          <table id="myTable">
+            <tr>
+              <td>Row1 cell1</td>
+              <td>Row1 cell2</td>
+            </tr>
+            <tr>
+              <td>Row2 cell1</td>
+              <td>Row2 cell2</td>
+            </tr>
+            <tr>
+              <td>Row3 cell1</td>
+              <td>Row3 cell2</td>
+            </tr>
+          </table>
+          <br>
+                
+            <button type="button" onclick="myFunction()">Try it</button>
+        </div>
       </div>
-    </form>
+    </form> 
+  </div>
 
-    <script>
-      function myFunction() {
-        var table = document.getElementById("myTable");
-        var row = table.insertRow(0);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        cell1.innerHTML = "NEW CELL1";
-        cell2.innerHTML = "NEW CELL2";
-      }
-      </script>
+    
     
 </body>
 </html>
